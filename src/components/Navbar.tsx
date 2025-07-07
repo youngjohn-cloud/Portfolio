@@ -132,6 +132,16 @@ const MobileScreenSideBar = ({
   showSideBar: boolean;
   setShowSideBar: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
+  useEffect(() => {
+    if (showSideBar) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [showSideBar]);
   return (
     <div
       onClick={() => setShowSideBar(false)}
@@ -162,7 +172,7 @@ const MobileScreenSideBar = ({
             <div className="w-9 h-9 bg-greenAccent font-semibold text-xl rounded-full d-flex">
               A
             </div>
-            <span className="dark:text-lightGray">Adeosun</span>
+            <span className="dark:text-darkGray">Adeosun</span>
           </div>
           <div className="flex flex-col gap-3 items-end">
             {navLinks.map((items, i) => (
@@ -172,7 +182,7 @@ const MobileScreenSideBar = ({
                 className="mt-8 flex items-center gap-3"
               >
                 <Icon icon={items.icon} width="24" height="24" />
-                <span className="text-sm font-medium dark:text-lightGray">
+                <span className="text-sm font-medium dark:text-darkGray">
                   {items.name}
                 </span>
               </a>

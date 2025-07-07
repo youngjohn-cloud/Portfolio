@@ -12,6 +12,9 @@
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
+.no-scroll {
+  overflow-y: hidden;
+}
 html,
 body {
   margin: 0;
@@ -42,7 +45,7 @@ img {
   object-fit: cover;
 }
 .big-container {
-  @apply relative lg:px-10 sm:px-8 px-3 lg:max-w-[1200px] max-w-full w-full lg:mx-auto container;
+  @apply relative lg:px-10 sm:px-8 px-5 lg:max-w-[1200px] max-w-full w-full lg:mx-auto container;
 }
 .d-flex {
   display: flex;
