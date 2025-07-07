@@ -13,8 +13,8 @@ export default function Footer() {
       <section className="big-container">
         <footer className="py-14">
           <div className="max-sm:text-center">
-            <div className="mainTitle mt-1.5">
-              <h1 className="leading-snug">
+            <div className="mainTitle mt-1.5 ">
+              <h1 className="leading-snug dark:text-lightGray">
                 Let's <span className="text-greenAccent">Connect</span> there
               </h1>
             </div>

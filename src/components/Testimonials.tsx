@@ -28,14 +28,14 @@ const TestimonialsCarousel = () => {
       name: "Sarah Chen",
       company: "CEO, Chic Threads Boutique",
       comment:
-        "Their expertise in creating a seamless and visually stunning e-commerce platform significantly improved our customer experience. From the responsive design to the robust backend, everything just works, and our sales have never been better. Highly recommend for any e-commerce business looking to elevate their online presence!",
+        "His expertise in creating a seamless and visually stunning e-commerce platform significantly improved our customer experience. From the responsive design to the robust backend, everything just works, and our sales have never been better. Highly recommend for any e-commerce business looking to elevate their online presence!",
       img: "https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxQnZiNUlhMmRFb3x8ZW58MHx8fHx8",
     },
     {
       name: "David Green,",
       company: "CEO, Verdant Living Plants",
       comment:
-        "We needed a custom solution to manage inventory, track plant health, and connect with our customers online, and they delivered perfectly. Their full-stack development skills ensured our website is not only beautiful but also incredibly functional and easy to manage.",
+        "We needed a custom solution to manage inventory, track plant health, and connect with our customers online, and he delivered perfectly. His full-stack development skills ensured our website is not only beautiful but also incredibly functional and easy to manage.",
       img: "https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjJ8MUJ2YjVJYTJkRW98fGVufDB8fHx8fA%3D%3D",
     },
   ];

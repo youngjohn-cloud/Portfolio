@@ -60,7 +60,7 @@ export default function Faq() {
         <div className="text-center mb-5">
           <SubTitle title="FAQs" />
           <div className="mainTitle mt-2.5">
-            <h1 className="leading-tight">
+            <h1 className="leading-tight dark:text-lightGray">
               Questions? <span className="text-greenAccent">Look here</span>
             </h1>
           </div>
