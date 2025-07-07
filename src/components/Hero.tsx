@@ -24,7 +24,12 @@ export default function Hero() {
           </div>
           <div className="hero-btn sm:flex items-center max-sm:justify-center gap-3 max-sm:space-y-5">
             <ButtonLink title="View my Work" path="#projects" />
-            <ButtonLink title="Download CV" transparent />
+            <ButtonLink
+              download
+              path="/MyCV.pdf"
+              title="Download CV"
+              transparent
+            />
           </div>
         </div>
       </div>

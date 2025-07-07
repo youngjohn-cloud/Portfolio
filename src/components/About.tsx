@@ -48,7 +48,7 @@ export default function About() {
                 </span>
               </div>
               <div className="mt-4 w-max">
-                <ButtonLink title="Download CV" />
+                <ButtonLink download path="/MyCV.pdf" title="Download CV" />
               </div>
             </div>
           </div>
