@@ -20,8 +20,8 @@ export default function About() {
             </div>
             <div className="profile-decription text-xs leading-normal text-gray-400">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis saepe labore ipsa, accusantium accusamus eos?
+                I'm a passionate web developer dedicated to crafting efficient
+                and user-friendly digital solutions.
               </p>
             </div>
             <div className="project grid lg:grid-cols-3 grid-cols-2 max-[363px]:grid-cols-1 items-center gap-3">
