@@ -28,11 +28,11 @@ export default function Footer() {
                 <div className="w-9 h-9 bg-greenAccent font-semibold text-xl rounded-full d-flex">
                   A
                 </div>
-                <h4 className="text-base font-semibold">
+                <h4 className="text-base font-semibold dark:text-lightGray">
                   Adeosun<span className="text-greenAccent">.</span>
                 </h4>
               </div>
-              <div className="description text-xs text-gray-500 my-4">
+              <div className="description text-xs text-gray-500 dark:text-lightGray my-4">
                 <p>
                   I'm a passionate web developer dedicated to crafting efficient
                   and user-friendly digital solutions.
@@ -58,7 +58,7 @@ export default function Footer() {
               <div className="mt-6 flex flex-col gap-2.5">
                 {navLinks.map((items, i) => (
                   <a
-                    className="block text-gray-500 text-xs"
+                    className="block text-gray-500 dark:text-lightGray text-xs"
                     key={i}
                     href={items.path}
                   >
@@ -73,7 +73,10 @@ export default function Footer() {
               </h2>
               <div className="mt-6 flex flex-col gap-2.5">
                 {contacts.map((items, i) => (
-                  <p className="block text-gray-500 text-xs" key={i}>
+                  <p
+                    className="block text-gray-500 dark:text-lightGray text-xs"
+                    key={i}
+                  >
                     {items}
                   </p>
                 ))}
