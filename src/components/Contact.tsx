@@ -6,9 +6,9 @@ export default function Contact() {
   return (
     <section className="big-container" id="contact">
       <div className="py-14">
-        <div className="text-center mb-3.5">
+        <div className="text-center mb-8">
           <SubTitle title="Contact Me" />
-          <div className="mainTitle mt-2.5">
+          <div className="mainTitle mt-2.5 dark:text-gray-100">
             <h1 className="leading-tight">
               Let's Talk for{" "}
               <span className="text-greenAccent">
@@ -48,6 +48,23 @@ const ContactForm = () => {
             <option selected disabled>
               select
             </option>
+            <option value="Custom Web Application Development">
+              Custom Web Application Development
+            </option>
+            <option value="Mobile App Backend (API)">
+              Mobile App Backend (API)
+            </option>
+            <option value="Website Redesign/Migration">
+              Website Redesign/Migration
+            </option>
+            <option value="Consulting & Technical Advisory">
+              Consulting & Technical Advisory
+            </option>
+            <option value="E-commerce Solutions">E-commerce Solutions</option>
+            <option value="SaaS Product Development">
+              SaaS Product Development
+            </option>
+            <option value="Backend Development">Backend Development</option>
           </select>
         </label>
         <label htmlFor="name">
@@ -56,6 +73,9 @@ const ContactForm = () => {
             <option selected disabled>
               Select Range
             </option>
+            <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+            <option value="$5,000 - $15,000">$5,000 - $15,000</option>
+            <option value="$15,000 - $30,000">$15,000 - $30,000</option>
           </select>
         </label>
         <label htmlFor="name">
@@ -64,6 +84,14 @@ const ContactForm = () => {
             <option selected disabled>
               Select Country
             </option>
+            <option value="France">Nigeria</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Other">Other</option>
           </select>
         </label>
       </div>
@@ -71,7 +99,7 @@ const ContactForm = () => {
         Your Message *
         <textarea rows={4} name="message" id="message" placeholder="message" />
       </label>
-      <button className="mt-8">
+      <button className="mt-8 text-black">
         <ButtonLink title="Send Message" path="#" />
       </button>
     </form>
@@ -86,7 +114,7 @@ export const socialIcons = [
 ];
 const ContactCard = () => {
   return (
-    <div className="pring-card relative ring-[0.7px] ring-lightGray bg-gray-100 shadow-sm rounded-2xl overflow-hidden">
+    <div className="pring-card relative ring-[0.7px] ring-lightGray dark:ring-gray-500 bg-gray-100 dark:text-lightGray dark:bg-darkGray shadow-sm rounded-2xl overflow-hidden">
       <div className="text-xs leading-relaxed flex flex-col gap-8 px-5 pt-5">
         <div className="address">
           <h4 className="text-lg font-semibold text-greenAccent mb-3">
@@ -112,8 +140,8 @@ const ContactCard = () => {
           </p>
         </div>
       </div>
-      <div className="mt-4 p-5 bg-greenAccent rounded-b-2xl">
-        <h3 className="text-base mb-2 font-medium">Stay Connected</h3>
+      <div className="mt-4 p-5 bg-greenAccent rounded-b-2xl dark:text-black">
+        <h3 className="text-lg mb-2 font-medium">Stay Connected</h3>
         <div className="flex items-center justify-between">
           {socialIcons.map((icon, i) => (
             <div

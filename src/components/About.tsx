@@ -10,7 +10,7 @@ export default function About() {
           <div className="profile-img max-md:hidden">profile img</div>
           <div className="profile-content flex flex-col gap-3">
             <SubTitle title="About Me" />
-            <div className="profile-name mainTitle max-sm:text-center">
+            <div className="profile-name mainTitle max-sm:text-center dark:text-gray-100">
               <h1>
                 Who is{" "}
                 <span className="capitalize text-greenAccent">

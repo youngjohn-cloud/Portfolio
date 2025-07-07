@@ -8,37 +8,37 @@ export default function Faq() {
     {
       question: "What services do you offer as a web developer?",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam minima dolorem expedita adipisci porro non repudiandae eligendi molestiae consequuntur!",
+        "As a full-stack web developer, I provide end-to-end solutions for your digital needs. This means I handle everything from designing the user-facing part of your application (the frontend) to building the server-side logic and database ",
       open: false,
     },
     {
       question: "What industries do you specialize in?",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam minima dolorem expedita adipisci porro non repudiandae eligendi molestiae consequuntur!",
+        "While I'm proficient in building web solutions across various domains, my experience as a full-stack developer has given me particular expertise in e-commerce, healthcare, and education sectors. I understand the unique challenges and requirements of these industries, allowing me to create tailored solutions that meet your specific needs.",
       open: true,
     },
     {
       question: "Are you available for freelance work?",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam minima dolorem expedita adipisci porro non repudiandae eligendi molestiae consequuntur!",
+        "Yes, I am! I'm actively seeking new and exciting freelance opportunities to help businesses and individuals bring their digital ideas to life. Whether you need a brand-new web application, an API developed, or improvements to an existing system, feel free to reach out. I'm keen to discuss your project requirements and see how my full-stack expertise can contribute to your success.",
       open: false,
     },
     {
       question: "What tools do you use for your development work?",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam minima dolorem expedita adipisci porro non repudiandae eligendi molestiae consequuntur!",
+        "As a full-stack developer, I leverage a wide array of modern tools and technologies across the entire development spectrum. Here are some of my go-to technologies: Frontend: React.js, Next.js, Tailwind CSS, HTML5, CSS3, JavaScript (ES6+), TypeScript. Backend: PHP, Laravel, . Database: MongoDB, PostgreSQL, MySQL. Version Control: Git, GitHub. Deployment: Docker, AWS, Heroku, Vercel. I also utilize various libraries and frameworks to enhance functionality, such as Redux for state management, Axios for API requests, and more. My goal is to choose the right tools for each project to ensure optimal performance, scalability, and maintainability.",
       open: false,
     },
     {
       question: "How do i navigate through your portfolio projects?",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam minima dolorem expedita adipisci porro non repudiandae eligendi molestiae consequuntur!",
+        "To navigate through my portfolio projects, simply visit the 'Projects' section of my website. There, you'll find a curated list of my work, each with a brief description. If you have any specific questions about a project or need further information, feel free to reach out through the contact form.",
       open: false,
     },
     {
       question: "Can i download your resume/CV for information",
       answer:
-        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam minima dolorem expedita adipisci porro non repudiandae eligendi molestiae consequuntur!",
+        " Absolutely! You can download my resume/CV directly from the 'About Me' section of my website. It contains detailed information about my skills, experience, and education. If you have any questions or need additional information, don't hesitate to contact me.",
       open: false,
     },
   ]);

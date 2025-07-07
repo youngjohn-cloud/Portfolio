@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ButtonLink from "./ButtonLink";
 
 export const navLinks = [
@@ -81,32 +81,42 @@ export default function Navbar() {
   );
 }
 const ToggleTheme = () => {
-  const [darkTheme, setDarkTheme] = useState(false);
-  const handleDarkTheme = () => {
-    document.documentElement.classList.toggle("dark");
-    setDarkTheme(!darkTheme);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
   };
   return (
     <button
-      onClick={handleDarkTheme}
+      onClick={toggleTheme}
       className="Theme relative w-[40px] h-[22px] rounded-xl  hover:ring-[#026c9c] dark:ring-[#dfdfd6] ring-[#d7d7d7] ring-[1px] transition-ease bg-[#8e96aa24]"
     >
       <span
         className={`${
-          darkTheme && "translate-x-full"
-        } transition-ease absolute top-[2px] left-[1px] w-[18px] h-[18px] rounded-full bg-white box-shadow pointer-events-auto`}
+          theme === "dark"
+            ? "translate-x-full bg-darkGray"
+            : "translate-x-0 bg-white"
+        } transition-ease absolute top-[2px] left-[1px] w-[18px] h-[18px] rounded-full  box-shadow pointer-events-auto`}
       >
         <span className="relative top-[1px] left-[1px] w-[18px] h-[18px] rounded-full overflow-hidden block">
           <Icon
             icon="solar:sun-outline"
             className={`${
-              darkTheme ? "opacity-0" : "opacity-100"
+              theme === "dark" ? "opacity-0" : "opacity-100"
             } w-[12px] h-[12px] absolute top-[2px] left-[2px] text-[#67676c] transition-ease`}
           />
           <Icon
             icon="ri:moon-line"
             className={`${
-              darkTheme ? "opacity-100" : "opacity-0"
+              theme === "dark" ? "opacity-100" : "opacity-0"
             } dark:text-[#dfdfd6] w-[12px] h-[12px] absolute top-[2px] left-[2px] text-[#67676c] transition-ease`}
           />
         </span>

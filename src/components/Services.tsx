@@ -28,7 +28,7 @@ export default function Services() {
       <div className="py-11">
         <SubTitle title="My Specialization" />
         <div className="flex items-center justify-between my-4">
-          <div className="mainTitle capitalize">
+          <div className="mainTitle capitalize dark:text-lightGray">
             <span className="text-greenAccent">services</span> i provide
           </div>
         </div>
@@ -36,17 +36,17 @@ export default function Services() {
           {allServices.map((items, i) => (
             <div
               key={i}
-              className="card-design relative ring-[0.7px] ring-lightGray bg-gray-100 shadow-sm rounded-2xl p-5"
+              className="card-design relative ring-[0.7px] ring-lightGray bg-gray-100 dark:text-lightGray dark:bg-darkGray shadow-sm rounded-2xl p-5"
             >
-              <div className="icon w-12 h-12 d-flex rounded-full bg-white text-greenAccent mb-3">
-                <Icon icon={items.icon} fill="#00ff00" width="30" height="30" />
+              <div className="icon w-12 h-12 d-flex rounded-full bg-white dark:text-white dark:bg-gray-500 text-greenAccent mb-3">
+                <Icon icon={items.icon} width="30" height="30" />
               </div>
               <div className="card-title">
                 <h3 className="text-xl concert-one-regular capitalize">
                   {items.name}
                 </h3>
               </div>
-              <div className="card-content text-xs text-gray-500 my-2 leading-normal ellipsis">
+              <div className="card-content text-xs text-gray-500 dark:text-gray-300 my-2 leading-normal ellipsis">
                 <p>{items.description}</p>
               </div>
               <div className="card-link">

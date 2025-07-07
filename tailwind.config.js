@@ -8,6 +8,7 @@ export default {
         accent: "#00CC00",
         greenAccent: "#00FF00",
         lightGray: "#E0E0E0",
+        darkGray: "#121212",
       },
     },
   },

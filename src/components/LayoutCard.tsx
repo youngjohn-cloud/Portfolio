@@ -23,7 +23,7 @@ const useLayoutContext = () => {
 export default function LayoutCard({ children, content }: ContentProps) {
   return (
     <LayoutContext.Provider value={{ content }}>
-      <div className="grid lg:grid-cols-2 items-center gap-8 p-4 ring-[0.7px] ring-lightGray bg-gray-100 shadow-sm rounded-2xl">
+      <div className="grid lg:grid-cols-2 items-center gap-8 p-4 ring-[0.7px] ring-lightGray dark:bg-darkGray dark:ring-gray-400 bg-gray-100 shadow-sm rounded-2xl">
         {children}
       </div>
     </LayoutContext.Provider>
@@ -53,15 +53,15 @@ LayoutCard.Content = function LayoutCardContent() {
         </span>
       </div>
       <div className="layout-title my-3">
-        <h2 className="text-xl font-medium leading-tight">
+        <h2 className="text-xl font-medium leading-tight dark:text-gray-100">
           {content.projectTitle}
           <br /> {content.projectLabel}
         </h2>
       </div>
-      <div className="layout-description text-sm leading-normal text-gray-400 max-w-96 mb-4">
+      <div className="layout-description text-sm leading-normal text-gray-400 dark:text-lightGray max-w-96 mb-4">
         <p>{content.projectDesc}</p>
       </div>
-      <div className="icon-link w-8 h-8 d-flex rounded-full ring-[0.9px] ring-lightGray">
+      <div className="icon-link w-8 h-8 d-flex rounded-full ring-[0.9px] ring-lightGray dark:text-gray-100">
         <Icon
           className="-rotate-45"
           icon="guidance:left-arrow"

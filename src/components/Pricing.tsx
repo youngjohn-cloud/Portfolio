@@ -8,14 +8,14 @@ const data = [
     duration: "Hour",
     price: "30",
     list: [
-      "Lorem ipsum dolor sit amet.",
-      "ipsum doloremque veritatis",
-      "Quidem, in! Beatae, consectetur",
-      "ipsum dolor sit amet",
-      "  facere harum assumenda",
-      "ipsum dolor sit amet.",
-      "Beatae, consectetur",
-      "nobis, ipsum doloremque",
+      "Prompt Bug Fixes & Patches",
+      "Technical Consultation & Guidance",
+      "Minor Feature Implementations",
+      "Code Review & Optimization",
+      "Post-Launch Tweaks & Adjustments",
+      "Ad-Hoc Development Tasks",
+      "Direct Communication & Transparency",
+      "No Long-Term Commitment",
     ],
   },
   {
@@ -23,14 +23,14 @@ const data = [
     duration: "month",
     price: "1500",
     list: [
-      "Lorem ipsum dolor sit amet.",
-      "ipsum doloremque veritatis",
-      "Quidem, in! Beatae, consectetur",
-      "ipsum dolor sit amet",
-      "  facere harum assumenda",
-      "ipsum dolor sit amet.",
-      "Beatae, consectetur",
-      "nobis, ipsum doloremque",
+      "Priority Development Queue",
+      "Continuous Feature Development",
+      "Ongoing Website Maintenance & Updates",
+      "Dedicated Monthly Development Hours",
+      "Proactive Bug Monitoring & Resolution",
+      "Full-stack Backend & API Development",
+      "Intuitive Frontend User Interface (UI)",
+      "Regular Progress & Status Reports",
     ],
   },
   {
@@ -38,14 +38,14 @@ const data = [
     duration: "Qtr",
     price: "15,000",
     list: [
-      "Lorem ipsum dolor sit amet.",
-      "ipsum doloremque veritatis",
-      "Quidem, in! Beatae, consectetur",
-      "ipsum dolor sit amet",
-      "  facere harum assumenda",
-      "ipsum dolor sit amet.",
-      "Beatae, consectetur",
-      "nobis, ipsum doloremque",
+      "Comprehensive Project Lifecycle Management",
+      "Dedicated Full-Stack Development Team/Lead",
+      "Advanced Web Application Architecture",
+      "Proactive Performance Optimization",
+      "Strategic Technical Partnership",
+      "Integrated SEO Best Practices",
+      "Comprehensive Testing & Quality Assurance",
+      "Detailed Analytics & Reporting Setup",
     ],
   },
 ];
@@ -55,7 +55,7 @@ export default function Pricing() {
       <div className="py-14">
         <div className="title">
           <SubTitle title="Pricing Table" />
-          <div className="my-5 max-sm:text-center">
+          <div className="my-5 max-sm:text-center dark:text-gray-100">
             <h2 className="mainTitle">
               My <span className="text-greenAccent">Pricing Model</span>
             </h2>
@@ -65,7 +65,7 @@ export default function Pricing() {
           {data.map((items, i) => (
             <div
               key={i}
-              className="pring-card mt-3 relative ring-[0.7px] ring-lightGray bg-gray-100 shadow-sm rounded-2xl p-3.5"
+              className="pring-card mt-3 relative ring-[0.7px] ring-lightGray dark:ring-gray-500 dark:bg-darkGray bg-gray-100 shadow-sm rounded-2xl p-3.5"
             >
               <div className="price px-3 py-4 bg-greenAccent rounded-xl">
                 <div className="flex items-center justify-between">
@@ -99,7 +99,10 @@ export default function Pricing() {
                         height="14"
                       />
                     </div>
-                    <span key={i} className="text-[14px] text-gray-500">
+                    <span
+                      key={i}
+                      className="text-[14px] text-gray-500 dark:text-gray-300 webkit-line-clamp1 ellipsis"
+                    >
                       {lists}
                     </span>
                   </div>

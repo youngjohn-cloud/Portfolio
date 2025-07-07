@@ -34,8 +34,8 @@ export default function Footer() {
               </div>
               <div className="description text-xs text-gray-500 my-4">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  corporis voluptatibus velit nostrum molestiae voluptatum
+                  I'm a passionate web developer dedicated to crafting efficient
+                  and user-friendly digital solutions.
                 </p>
               </div>
               <div className="social-links flex gap-2">

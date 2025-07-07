@@ -6,7 +6,7 @@ export default function Project() {
     <section className="big-container py-11" id="projects">
       <SubTitle title="My Portfolio" />
       <div className="flex items-center justify-between my-3 max-sm:text-center">
-        <div className="title mainTitle">
+        <div className="title mainTitle dark:text-gray-100">
           <h2 className="leading-tight">
             Let's Have a Look <br /> at{" "}
             <span className="text-greenAccent">My Portfolio</span>
@@ -21,7 +21,7 @@ export default function Project() {
             projectTitle: "Plant Shop - Plant Shop",
             projectLabel: "Website Solution",
             projectDesc:
-              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ex placeat voluptatibus modi?",
+              "A modern e-commerce platform designed for a plant shop, enabling customers to easily browse, select, and purchase a wide variety of plants and gardening accessories online.",
           }}
         >
           <LayoutCard.Image />
@@ -34,7 +34,7 @@ export default function Project() {
             projectTitle: "Clothy Shop - Clothy Shop",
             projectLabel: "Website Solution",
             projectDesc:
-              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ex placeat voluptatibus modi?",
+              "Developed a stylish and responsive e-commerce website for a clothing brand. This solution features intuitive product categorization, a seamless shopping cart experience, and secure payment processing to enhance the online shopping journey for customers.",
           }}
         >
           <LayoutCard.Content />

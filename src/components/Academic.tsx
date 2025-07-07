@@ -54,7 +54,7 @@ export default function Academic() {
         <div className="text-center">
           <SubTitle title="Education & Works" />
           <div className="mainTitle mt-1.5">
-            <h1 className="leading-snug">
+            <h1 className="leading-snug dark:text-gray-100">
               My{" "}
               <span className="text-greenAccent">
                 Academic & <br /> Professional
@@ -67,10 +67,10 @@ export default function Academic() {
           {data.map((items, i) => (
             <div
               key={i}
-              className="card-design relative ring-[0.7px] ring-lightGray bg-gray-100 shadow-sm rounded-2xl p-5"
+              className="card-design relative ring-[0.7px] ring-lightGray dark:ring-gray-500 bg-gray-100 dark:text-lightGray dark:bg-darkGray shadow-sm rounded-2xl p-5"
             >
               <div className="card-title flex items-center gap-3 mb-3">
-                <div className="icon w-11 h-11 d-flex rounded-full bg-greenAccent ">
+                <div className="icon w-11 h-11 d-flex rounded-full bg-greenAccent dark:text-black">
                   <Icon icon={items.icon} width="28" height="28" />
                 </div>
                 <h3 className="text-xl font-medium">{items.title}</h3>
@@ -88,7 +88,7 @@ export default function Academic() {
                         {data.certificate}
                       </span>
                     </div>
-                    <div className="mb-2.5 lg:mb-0 w-max lg:text-sm text-xs font-medium px-3 py-2 rounded-full bg-greenAccent">
+                    <div className="mb-2.5 dark:text-black lg:mb-0 w-max lg:text-sm text-xs font-medium px-3 py-2 rounded-full bg-greenAccent">
                       {data.duration}
                     </div>
                   </div>

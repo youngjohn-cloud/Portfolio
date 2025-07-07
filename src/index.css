@@ -101,9 +101,17 @@ select,
 textarea {
   background: #f3f4f6;
   padding: 14px;
-  border: 1px solid #e0e2e4;
+  border: 1px solid;
   border-radius: 10px;
   margin-block: 7px;
+}
+.form label {
+  @apply dark:text-gray-100;
+}
+.form input,
+select,
+textarea {
+  @apply dark:bg-darkGray ring-[#e0e2e4] dark:ring-gray-500;
 }
 .transition-faq {
   transition: all 0.4s ease;

@@ -35,9 +35,9 @@ const data = [
 ];
 export default function Blog() {
   return (
-    <section className="big-container" id="blog">
+    <section className="big-container hidden" id="blog">
       <div className="py-14">
-        <div className="mb-8">
+        <div className="mb-8 dark:text-gray-100">
           <SubTitle title="News & Blogs" />
           <div className="mainTitle max-sm:text-center mt-2.5">
             <h1 className="leading-tight">
@@ -50,7 +50,7 @@ export default function Blog() {
           {data.map((item, i) => (
             <div
               key={i}
-              className="blog-card relative ring-[0.7px] ring-lightGray bg-gray-100 shadow-sm rounded-2xl p-3"
+              className="blog-card relative ring-[0.7px] ring-lightGray bg-gray-100  dark:bg-darkGray shadow-sm rounded-2xl p-3"
             >
               <div className="blog-image relative overflow-hidden w-full h-40 rounded-xl">
                 <img
@@ -60,7 +60,7 @@ export default function Blog() {
                 />
                 <div className="background-cover w-full h-full opacity-20 bg-black absolute top-0 left-0 right-0" />
               </div>
-              <div className="blog-tags text-[14px] font-medium my-3.5 flex items-center">
+              <div className="blog-tags text-[14px] text-black font-medium my-3.5 flex items-center">
                 <p className="px-3 py-2 bg-greenAccent rounded-3xl">
                   <span className="webkit-line-clamp1 ellipsis">
                     {item.blogTag}
@@ -72,13 +72,15 @@ export default function Blog() {
                   </span>
                 </p>
               </div>
-              <div className="title">
+              <div className="title dark:text-gray-100">
                 <h2 className="ellipsis font-semibold text-[21px] leading-tight">
                   {item.blogTitle}
                 </h2>
               </div>
               <div className="blog-details text-gray-500 text-xs mt-3">
-                <p className="ellipsis">{item.blogContent}</p>
+                <p className="ellipsis dark:text-lightGray">
+                  {item.blogContent}
+                </p>
               </div>
               <div className="line w-1.5 h-8 bg-greenAccent absolute bottom-1/3 left-0 -translate-x-full rounded-s-2xl" />
             </div>
